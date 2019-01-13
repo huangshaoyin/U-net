@@ -163,7 +163,7 @@ class myUnet(object):
 
 		print('predict test data')
 		imgs_mask_test = model.predict(imgs_test, batch_size=1, verbose=1)
-		np.save('../results/imgs_mask_test.npy', imgs_mask_test)
+		np.save('\\results\\imgs_mask_test.npy', imgs_mask_test)
 
 	def save_img(self):
 
@@ -172,7 +172,7 @@ class myUnet(object):
 		for i in range(imgs.shape[0]):
 			img = imgs[i]
 			img = array_to_img(img)
-			img.save("../results/%d.jpg"%(i))
+			img.save("\\results\\%d.jpg"%(i))
 
 
 
